@@ -1,0 +1,116 @@
+/*              lsp-card2-1             */
+#lsp-card2-1{
+     float: right;
+     color: white;
+     background-color: black;
+     width: 45%;
+     height: 100%;
+     display: none;
+}
+ #lsp-card2-1a{
+    margin-top: 150px;
+    position: absolute;
+    margin-right: 25px;
+    text-align: right;
+}
+ #lsp-card2-1b{
+    margin-top: 220px;
+    position: absolute;
+    margin-left: 125px;
+}
+ .hr3{
+    width: 30%;
+    position: absolute;
+    margin-left: 75px;
+    border: 8px solid orangered;
+    opacity: 3;
+    border-radius: 50px;
+    margin-top: 209px;
+}
+/*              lsp-card2-2             */
+#lsp-card2-2{
+    display: none;
+}
+#lsp-card2-form{
+    margin-left: 20px;
+    margin-top: 40px;
+    width: 55%;
+    padding: 5px;
+}
+#fname{
+    width: 80%;
+    height: 35px;
+    border-radius: 17px;
+    border: 1px solid black;
+    outline: none;
+}
+#lname{
+    width: 80%;
+    margin-top: 15px;
+    height: 35px;
+    border-radius: 17px;
+    border: 1px solid black;
+    outline: none;
+}
+#email{
+    width: 80%;
+    margin-top: 15px;
+    height: 35px;
+    border-radius: 17px;
+    border: 1px solid black;
+    outline: none;
+}
+#fname::placeholder,#password2::placeholder,#lname::placeholder,#email::placeholder,#password3::placeholder{
+    color: black;
+    padding-left: 15px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#fname:focus,#password2:focus,#lname:focus,#email:focus,#password3:focus{
+    outline: none;
+    border: 2px solid orangered;
+}
+#password2{
+    width: 80%;
+    margin-top: 15px;
+    height: 35px;
+    border-radius: 17px;
+    border: 1px solid black;
+    outline: none;
+}
+#password3{
+    width: 80%;
+    height: 35px;
+    border-radius: 17px;
+    border: 1px solid black;
+    outline: none;
+}
+.lsp-sign-up{
+    background-color: orangered;
+    color: white;
+    width: 80%;
+    font-weight: bold;
+    opacity: 2;
+    margin-top: 15px;
+    border: 2px solid orangered;
+    border-radius: 34px;
+    outline: none;
+    font-size: 18px;
+    box-shadow: 3px 3px 19px rgb(148,55,21), -2px -2px 19px rgb(148, 55, 21);
+}
+#lsp-sign-in{
+    margin-top: 10px;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: -14px;
+}
+.lsp-sign-in{
+    color: orangered;
+    text-decoration: none;
+}
+.lsp-sign-in:hover{
+    text-decoration: underline solid orangered;
+    color: orangered;
+}
