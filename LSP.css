@@ -18,6 +18,14 @@
     margin-left: 400px;
     font-family: 'Roboto Mono', monospace;
 }
+body{
+    overflow: hidden;
+}
+@media screen and (max-width:750px){
+    #lsp-card{
+        margin-left: 40px;
+    }
+}
 /*          lsp-card1-1             */
 #lsp-card1-1{
     background-color: black;
@@ -41,6 +49,7 @@
     position: absolute;
     width: 38%;
     margin-left: 15px;
+    line-height: 30px;
 }
 hr{
     width: 30%;
