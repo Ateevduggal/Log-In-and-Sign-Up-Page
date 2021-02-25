@@ -85,14 +85,23 @@
                             });
                         })
                     </script>
-                    <input type="password" id="password3" placeholder="confirm password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
+                    <input type="password" id="password3" placeholder="confirm password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password do not match" required><br>
+                  <script>
+                        $('#password2, #password3').on('keyup', function () {
+  if ($('#password2').val() == $('#password3').val()) {
+    $('#message').html('*Password match').css('color', 'green');
+  } else 
+    $('#message').html('*Password does not match').css('color', 'red');
+});
+                    </script>
                     <div id="lsp-lock">
-                        <span class="lsp-lock"><i class="fas fa-lock"></i></span>
-                    </div>                    
+                        <span class="lsp-lock1"><i class="fas fa-lock"></i></span>
+                    </div> <br>
+                    <span id="message"></span>                   
                     <br>
                     <script>
                         $(document).ready(function(){
-                            $(".lsp-lock").click(function(){
+                            $(".lsp-lock1").click(function(){
                                 if($("#password3").attr("type") == "password"){
                                     $("#password3").attr("type","text");
                                 }else{
@@ -101,7 +110,7 @@
                             });
                         })
                     </script>
-                    <input type="submit" class="lsp-sign-up" value="Sign Up"><br><br>
+                    <input type="submit" class="lsp-sign-up" value="Sign Up"><br>
                     <hr id="hr1">
                     <label id="lsp-or">OR</label>
                     <hr id="hr2">
