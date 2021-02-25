@@ -12,6 +12,7 @@
     position: absolute;
     margin-right: 25px;
     text-align: right;
+    line-height: 30px;
 }
  #lsp-card2-1b{
     margin-top: 220px;
@@ -43,6 +44,7 @@
     border-radius: 17px;
     border: 1px solid black;
     outline: none;
+    padding: 15px;
 }
 #lname{
     width: 80%;
@@ -51,6 +53,7 @@
     border-radius: 17px;
     border: 1px solid black;
     outline: none;
+    padding: 15px;
 }
 #email{
     width: 80%;
@@ -59,10 +62,10 @@
     border-radius: 17px;
     border: 1px solid black;
     outline: none;
+    padding: 15px;
 }
 #fname::placeholder,#password2::placeholder,#lname::placeholder,#email::placeholder,#password3::placeholder{
     color: black;
-    padding-left: 15px;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -72,6 +75,7 @@
 }
 #password2{
     width: 80%;
+    padding: 15px;
     margin-top: 15px;
     height: 35px;
     border-radius: 17px;
@@ -84,6 +88,11 @@
     border-radius: 17px;
     border: 1px solid black;
     outline: none;
+    padding: 15px;
+}
+#message{
+    padding: 12px;
+    margin-top: -8px;
 }
 .lsp-sign-up{
     background-color: orangered;
